@@ -1,9 +1,57 @@
 :root {
-  --background-color: #171a24;
+  --body-background-color: hsl(226, 22%, 55%);
+  --nav-font-color: hsl(0, 0%, 0%);
+  --nav-background-color: hsl(0, 100%, 50%);
 }
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+body {
+  background-color: var(--body-background-color);
+}
+.nav-bar {
+  display: flex;
+  justify-content: center;
+  width: 100rem;
+  background-color: var(--nav-background-color);
+  position: fixed;
+  height: 10rem;
+}
+.logo {
+  width: 20rem;
+}
+.home-page-link {
+  margin-top: 1%;
+}
+.home-page-link:hover {
+  transition: 400ms ease;
+  opacity: 0.5;
+}
+.nav-item {
+  font-size: 1.2rem;
+  list-style: none;
+  margin-top: 9rem;
+  padding-bottom: 0;
+  font-weight: 700;
+}
+.nav-item a {
+  font-family: "Open Sans", sans-serif;
+  color: var(--nav-font-color);
+  text-decoration: none;
+}
+.nav-item a:hover {
+  transition: 400ms ease-in;
+  opacity: 0.5;
+  background-color: hsl(0, 0%, 50%);
+}
+.left-nav,
+.right-nav {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
