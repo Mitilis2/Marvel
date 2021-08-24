@@ -1,6 +1,6 @@
 :root {
   --body-background-color: hsl(226, 22%, 55%);
-  --nav-font-color: hsl(0, 0%, 0%);
+  --nav-font-color: hsl(0, 0%, 100%);
   --nav-background-color: hsl(0, 100%, 50%);
 }
 
@@ -17,8 +17,9 @@ body {
   display: flex;
   justify-content: center;
   width: 100rem;
-  background-color: var(--nav-background-color);
-  position: fixed;
+  background-image: url("/images/header.jpg");
+  background-size: 100% 200px;
+  background-repeat: no-repeat;
   height: 10rem;
 }
 .logo {
