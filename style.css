@@ -8,6 +8,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
 }
 
 body {
@@ -16,7 +17,7 @@ body {
 .nav-bar {
   display: flex;
   justify-content: center;
-  width: 100rem;
+  width: 100%;
   background-image: url("header.jpg");
   background-size: 100% 200px;
   background-repeat: no-repeat;
@@ -40,7 +41,6 @@ body {
   font-weight: 700;
 }
 .nav-item a {
-  font-family: "Open Sans", sans-serif;
   color: var(--nav-font-color);
   text-decoration: none;
 }
@@ -55,4 +55,29 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+.phase-one {
+  border: 1px solid black;
+  display: flex;
+}
+.phase-title {
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+  width: 95%;
+  height: 25%;
+
+  font-size: 1.5rem;
+}
+.title {
+  margin: 0 4rem;
+}
+.bar {
+  width: 15rem;
+  height: 1rem;
+  background-color: black;
+  margin-top: 1%;
+}
+.avengers-1 {
+  width: 100%;
 }
