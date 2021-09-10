@@ -130,7 +130,7 @@ body {
 .info-section {
   display: flex;
   position: relative;
-  background-image: url(/bg-logo.png);
+  background-image: url(bg-logo.png);
   background-repeat: no-repeat;
   background-position: center;
 }
