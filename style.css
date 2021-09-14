@@ -89,6 +89,15 @@ body {
 .right-nav a {
   color: black;
 }
+
+.hidden {
+  display: none;
+}
+
+#shows-btn-one.clicked {
+  transition: all 0.3s ease;
+}
+
 /* main {
   /* background-image: url(/bg-logo2.png);
   background-repeat: no-repeat;
@@ -145,10 +154,10 @@ body {
   color: var(--phase-bar-color);
 }
 .info {
-  margin-top: 5%;
+  margin-top: 10%;
   padding: 2%;
   font-size: 3rem;
-  color: var(--body-font-color);
+  color: hsl(24, 100%, 60%);
   font-weight: 900;
 }
 
@@ -208,44 +217,55 @@ body {
 label > a {
   text-decoration: none;
   color: orange;
+  background-color: rgb(255, 255, 255);
+}
+
+.newsletter-section {
+  display: flex;
+  flex-direction: column;
+  font-size: 1.5rem;
 }
 .newsletter-sign-up {
   margin-left: 29%;
   padding-bottom: 25px;
-  color: white;
+  color: hsl(24, 100%, 50%);
 }
 .newsletter-form {
   display: flex;
   flex-direction: column;
   width: 25%;
-  color: white;
+  color: hsl(24, 100%, 50%);
 }
 .choices-form {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  color: white;
+  color: hsl(24, 100%, 50%);
   font-weight: 900;
+  background-color: ;
 }
 
 .choices-form > label {
   padding: 10%;
 }
+
 .agreement {
-}
-.agreement {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-start;
-  color: white;
+  text-align: center;
+  color: hsl(24, 100%, 50%);
   width: 90%;
 }
-.choices {
+.newsletter-btn {
+  background-color: var(--btns-bg-color);
+  width: 15rem;
+  height: 3rem;
+  font-size: 2rem;
+  color: rgb(0, 0, 0);
+}
+/* .choices {
   color: white;
   font-weight: 900;
-}
+} */
 footer {
   width: 100%;
   font-size: 1.5rem;
@@ -254,13 +274,15 @@ footer {
   padding-bottom: 0;
   font-weight: 900;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   height: 4rem;
-  background-color: white;
+  background-color: var(--newsletter-bg-color);
+  color: orange;
 }
-.footer a {
+.link > a {
   text-decoration: none;
+  color: #ff8800;
 }
 
 /* main {

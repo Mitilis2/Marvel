@@ -45,9 +45,9 @@
         </div>
        
         <div class="btns">
-                <button class="button movies-btn">MOVIES</button>
-                <button class="button shows-btn">SHOWS</button>
-                <button class="button learn-more-btn">LEARN MORE</button>
+            <button id="phase-one-learn-more" class="button learn-more-btn">LEARN MORE</button>
+                <button id="phase-one-movies" class="button movies-btn hidden">MOVIES</button>
+                <button id="shows-btn-one" class="button shows-btn hidden">SHOWS</button>
         </div>
         <!-- END OF FIRST SECTION -->
 </section>
@@ -65,9 +65,9 @@
             <img src="avengers-2.jpg" class="avengers-2" alt="Second Avengers Movie Poster">
         </div>
         <div class="btns-2">
-                <button class="button movies-btn">MOVIES</button>
-                <button class="button shows-btn">SHOWS</button>
-                <button class="button learn-more-btn">LEARN MORE</button>
+            <button class="button learn-more-btn">LEARN MORE</button>
+                <button class="button movies-btn clicked">MOVIES</button>
+                <button class="button shows-btn clicked">SHOWS</button>
         </div>
     </section>
     <!-- END OF SECOND SECTION -->
@@ -82,13 +82,13 @@
         <div class="info-section">
             <img src="avengers-3.jpg" class="avengers-3" alt="Second Avengers Movie Poster">
             <div class="text">        
-                <p class="info">Marvel's second phase added both characters and storylines, including Agents of S.H.I.E.L.D, revealing that Agent Phil Coulson was still alive after The Avengers. The final movie of this phase is <span class="movie-name">ENDGAME</span> in 2015. </p>
+                <p class="info">Marvel's third phase involved several storylines coming together in the epic two-part finale to the "Infinity Saga"<span class="movie-name">INFINITY WAR</span> and <span class="movie-name">ENDGAME</span> in 2018. A record breaking box office success, this was a finale a decade in the making.</p>
             </div> 
         </div>
         <div class="btns">
-                <button class="button movies-btn">MOVIES</button>
-                <button class="button shows-btn">SHOWS</button>
-                <button class="button learn-more-btn">LEARN MORE</button>
+            <button class="button learn-more-btn">LEARN MORE</button>
+                <button class="button movies-btn clicked">MOVIES</button>
+                <button class="button shows-btn clicked">SHOWS</button>
         </div>
     </section>
     <!-- END OF THIRD SECTION -->
@@ -108,7 +108,7 @@
         <div class="newsletter">
         <form class="newsletter-form" action="submit">
             <label for="email">E-Mail Address:</label>
-            <input type="text" name="email" id="email">
+            <input type="email" name="email" id="email">
             <br>
             <label for="name">Name:</label>
             <input type="text" name="name" id="name">
@@ -122,12 +122,14 @@
             <label for="releases">Releases</label>
             
         </form>
-        <form action="submit" class="agreement">
+        <form action="index.html" class="agreement">
             <input type="radio" name="terms" id="terms">
             <label for="terms">I agree to the <a href="">Terms & Conditions</a></label>
+            <br>
             <input type="radio" name="privacy" id="privacy">
             <label for="privacy">I have read the <a href="">Privacy Policy</a></label>
-            <button type="submit">Join the Club!</button>
+            <br>
+            <button class="newsletter-btn" type="submit">Join the Club!</button>
 
         </form>
         </div>
@@ -136,9 +138,13 @@
     <footer>
         <p>CREATED BY MITILIS</p>
 
-        <p><a href="https://twitter.com/techtilis">TWITTER</a></p>
-        <p><a href="https:/github.com/mitilis2">Github</a></p>
+        <p class="link"><a href="https://twitter.com/techtilis"  target="_blank">TWITTER<i class="fas fa-external-link-square-alt"></i></a></p>
+        <p class="link"><a href="https:/github.com/mitilis2" target="_blank">GITHUB<i class="fas fa-external-link-square-alt"></i></a></p>
     </footer>
     
+
+
+    <script src="https://kit.fontawesome.com/bd274f38ed.js" crossorigin="anonymous"></script>
+
 </body>
 </html>
